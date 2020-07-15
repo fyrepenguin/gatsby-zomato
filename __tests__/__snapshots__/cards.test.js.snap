@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cards Cards Renders correctly 1`] = `
+<div
+  className="cards-container"
+>
+  <div
+    className="ant-card ant-card-bordered ant-card-hoverable"
+  >
+    <div
+      className="ant-card-cover"
+    >
+      <img
+        alt="K Foods"
+        data-testid="card-img"
+        src="https://b.zmtcdn.com/data/pictures/chains/7/18750387/9a3be91fd9a330cdf19b118c90b7beea.jpg?output-format=webp"
+        style={
+          Object {
+            "borderRadius": "0.5rem",
+            "cursor": "initial",
+          }
+        }
+      />
+    </div>
+    <div
+      className="ant-card-body"
+      style={Object {}}
+    >
+      <h3
+        className="ant-typography"
+        style={
+          Object {
+            "WebkitLineClamp": null,
+          }
+        }
+      >
+        K Foods
+      </h3>
+      <div
+        className="ant-typography"
+        data-testid="price"
+        style={
+          Object {
+            "WebkitLineClamp": null,
+          }
+        }
+      >
+        <span
+          className="ant-typography"
+          style={
+            Object {
+              "WebkitLineClamp": null,
+            }
+          }
+        >
+          <strong>
+            Average Price: 
+          </strong>
+        </span>
+        ₹ 400
+      </div>
+      <div
+        className="ant-typography"
+        data-testid="rating"
+        style={
+          Object {
+            "WebkitLineClamp": null,
+          }
+        }
+      >
+        <span
+          className="ant-typography"
+          style={
+            Object {
+              "WebkitLineClamp": null,
+            }
+          }
+        >
+          <strong>
+            User Rating: 
+          </strong>
+        </span>
+        3.8 /5
+      </div>
+      <div
+        className="links"
+      >
+        <a
+          href="https://www.zomato.com/chennai/k-foods-porur?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+          rel="noreferrer"
+          target="_blank"
+          title="Restaurant Page"
+        >
+          View More
+        </a>
+        <div
+          className="ant-divider ant-divider-vertical"
+          role="separator"
+          style={
+            Object {
+              "borderColor": "rgba(0,0,0,0.65)",
+              "height": "auto",
+            }
+          }
+        />
+        <a
+          href="https://maps.google.com/?q=13.0193335601,80.1426019147"
+          rel="noreferrer"
+          target="_blank"
+          title="location"
+        >
+          View Location
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
