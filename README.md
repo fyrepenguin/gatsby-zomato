@@ -9,7 +9,7 @@ A Static Site generated using Gatsby and Zomato API
 
 ## Features
 
-- Gets Top Restaurant Details from a city using Zomato API
+- Gets Top Restaurant Details of a city by using Zomato API
 - Shows Rating, Average Price of the Restaurant
 - Gets Google Map Direction of Restaurant
 - Link to Zomato Page of the Restaurant
@@ -20,7 +20,7 @@ A Static Site generated using Gatsby and Zomato API
 Make sure you have installed the following on your development machine:
 
 - Node.js - [Download & install Node.js](https://nodejs.org/en/download/) and npm package manager.
-- Gatsby - install [Gatsby](https://www.gatsbyjs.org/) by using npm:
+- Gatsby - Install [Gatsby](https://www.gatsbyjs.org/) by using npm:
 
 ```
 $ npm install gatsby-cli -g
@@ -28,8 +28,11 @@ $ npm install gatsby-cli -g
 
 ## Development Setup
 
-1. Cloning the repository
-2. Getting the API key from [ZOMATO](https://developers.zomato.com/api)
+1. Clone the repository
+```
+$ git clone https://github.com/fyrepenguin/gatsby-zomato.git
+```
+2. Get the API key from [ZOMATO](https://developers.zomato.com/api)
 3. Create a .env file in the project root folder and add the key you got from Zomato as
 
 ```
@@ -42,13 +45,13 @@ ZOMATO_API_KEY=YOUR_API_KEY
 $ npm install
 ```
 
-Run the project by using:
+5. Run the project by using:
 
 ```
 $ gatsby develop
 ```
 
-Run the tests by using:
+6. Run the tests by using:
 
 ```
 $ npm test
