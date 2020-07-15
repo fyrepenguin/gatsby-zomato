@@ -57,7 +57,7 @@ $ gatsby develop
 $ npm test
 ```
 
-## Tech Stach Used
+## Tech Stack Used
 
 - [Gatsby](https://www.gatsbyjs.org/)
 - [Jest](https://jestjs.io/)
