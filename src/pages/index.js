@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <Header className='header' style={{ height: 78 }}>
+      <Header className='header'>
         <Title>List of top restaurants in Chennai</Title>
       </Header>
       <Content style={{ paddingTop: '3rem' }}>
