@@ -1,13 +1,11 @@
 import React from "react"
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import { Typography, Layout } from "antd";
-import 'antd/dist/antd.css'
 
+import 'antd/dist/antd.css'
 import '../styles.scss'
 
 import CardsContainer from "../components/cards";
-
-
 
 
 const { Title } = Typography
@@ -29,7 +27,7 @@ const IndexPage = ({ data }) => {
       </Footer>
     </Layout>)
 }
-
+// Gets data of restaurants
 export const query = graphql`
 {
   allRestaurant {

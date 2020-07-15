@@ -39,12 +39,6 @@ exports[`Index IndexPage Renders correctly 1`] = `
             alt="K Foods"
             data-testid="card-img"
             src="https://b.zmtcdn.com/data/pictures/chains/7/18750387/9a3be91fd9a330cdf19b118c90b7beea.jpg?output-format=webp"
-            style={
-              Object {
-                "borderRadius": "0.5rem",
-                "cursor": "initial",
-              }
-            }
           />
         </div>
         <div

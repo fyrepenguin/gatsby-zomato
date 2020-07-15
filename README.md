@@ -1,99 +1,76 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's hello-world starter
-</h1>
+# Top Restaurants of a city
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+A Static Site generated using Gatsby and Zomato API
+[Live Demo](https://quizzical-lalande.netlify.app/)
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## Preview
 
-## 🚀 Quick start
+![Screenshot](./assets/Screenshot.png)
 
-1.  **Create a Gatsby site.**
+## Features
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+- Gets Top Restaurant Details from a city using Zomato API
+- Shows Rating, Average Price of the Restaurant
+- Gets Google Map Direction of Restaurant
+- Link to Zomato Page of the Restaurant
+- Fully Responsive Design
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
+## Pre-requisites
 
-1.  **Start developing.**
+Make sure you have installed the following on your development machine:
 
-    Navigate into your new site’s directory and start it up.
+- Node.js - [Download & install Node.js](https://nodejs.org/en/download/) and npm package manager.
+- Gatsby - install [Gatsby](https://www.gatsbyjs.org/) by using npm:
 
-    ```shell
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
+```
+$ npm install gatsby-cli -g
+```
 
-1.  **Open the source code and start editing!**
+## Development Setup
 
-    Your site is now running at `http://localhost:8000`!
+1. Cloning the repository
+2. Getting the API key from [ZOMATO](https://developers.zomato.com/api)
+3. Create a .env file in the project root folder and add the key you got from Zomato as
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+```
+ZOMATO_API_KEY=YOUR_API_KEY
+```
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+4. Go the project root directory in terminal & install all the packages necessary using:
 
-## 🧐 What's inside?
+```
+$ npm install
+```
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+Run the project by using:
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+```
+$ gatsby develop
+```
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+Run the tests by using:
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+```
+$ npm test
+```
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+## Tech Stach Used
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+- [Gatsby](https://www.gatsbyjs.org/)
+- [Jest](https://jestjs.io/)
+- [Ant Design](https://ant.design/docs/react/introduce)
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+## Deployment
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+You can deploy to Netlify [automatically](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) from github or you can use netlify-cli to deploy [manually](https://www.netlify.com/blog/2019/05/28/deploy-in-seconds-with-netlify-cli/)
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+## Misc
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+You can get you city id from [Zomato API](https://developers.zomato.com/documentation#!/common/cities) and change the value in entity_id to your city id and get the top restaurants from your city.
 
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+```js
+// in your gatsby-node.js
+ params: {
+      "entity_id": your_city_id,
+    }
+```
