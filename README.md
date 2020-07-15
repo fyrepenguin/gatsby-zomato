@@ -44,14 +44,14 @@ ZOMATO_API_KEY=YOUR_API_KEY
 ```
 $ npm install
 ```
-
-5. Run the project by using:
+## How to Run
+1. Run the project by using:
 
 ```
 $ gatsby develop
 ```
 
-6. Run the tests by using:
+2. Run the tests by using:
 
 ```
 $ npm test
