@@ -6,11 +6,6 @@ exports[`Index IndexPage Renders correctly 1`] = `
 >
   <header
     className="ant-layout-header header"
-    style={
-      Object {
-        "height": 78,
-      }
-    }
   >
     <h1
       className="ant-typography"

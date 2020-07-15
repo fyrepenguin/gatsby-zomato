@@ -6,9 +6,11 @@ import palceholderImage from '../assets/placeholder.jpg'
 
 const { Title, Paragraph, Text } = Typography
 
-export const CardsContainer = ({ data }) => (
-  <div className="cards-container">
-    {data.allRestaurant.nodes.map(({ restaurant }) => {
+export const CardsContainer = ({ data }) => {
+  const { allRestaurant } = data
+
+  return (<div className="cards-container">
+    {allRestaurant.nodes.length > 0 ? allRestaurant.nodes.map(({ restaurant }) => {
       const { name, id, average_cost_for_two, featured_image, url, user_rating, location } = restaurant
       return (
         <Card hoverable key={id} cover={<img data-testid="card-img" src={featured_image || palceholderImage} alt={name} style={{
@@ -27,8 +29,11 @@ export const CardsContainer = ({ data }) => (
         </Card>
       )
     }
-    )}
+    ) : <div>No Data Found</div>}
   </div>
-)
+  )
+}
+
+
 
 export default CardsContainer
