@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "antd": "^4.4.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "gatsby": "^2.23.12",
     "gatsby-plugin-sass": "^2.3.12",
